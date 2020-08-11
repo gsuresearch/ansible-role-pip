@@ -1,6 +1,6 @@
 ---
 - name: Ensure Pip is installed.
-  package:
+  apt:
     name: "{{ pip_package }}"
     state: present
     update_cache: yes
